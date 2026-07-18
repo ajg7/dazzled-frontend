@@ -1,0 +1,23 @@
+# Normalize line endings: store as LF, check out native
+* text=auto
+
+# Force LF for shell scripts
+*.sh text eol=lf
+
+# Lockfiles stay LF
+pnpm-lock.yaml text eol=lf
+package-lock.json text eol=lf
+yarn.lock text eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
